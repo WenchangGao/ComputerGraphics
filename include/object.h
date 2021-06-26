@@ -1,4 +1,7 @@
 #include <cstdio>
+
+#ifndef OBJECT
+#define OBJECT
 #define square(x) ((x) * (x))
 const double eps = 1e-5;
 
@@ -42,3 +45,5 @@ public:
     double intersect(const Line3 &ray) const;
     Vec3 get_norm(const Vec3& x) const;
 };
+
+#endif
